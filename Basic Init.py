@@ -7,6 +7,8 @@ class MyHTMLWindow(wx.Frame):
         wx.Frame.__init__(self, parent, id = wx.ID_ANY, title = "Basic Example", pos = wx.DefaultPosition,
                           size = wx.Size(500, 300), style = wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
 
+        wx.InitAllImageHandlers()
+
         bSizerMain = wx.BoxSizer(wx.VERTICAL)
 
         html = wx.html.HtmlWindow(self)
